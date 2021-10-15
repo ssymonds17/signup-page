@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DirectlyApply Signup</title>
+  </head>
+  <body>
+    <nav>
+      <h1>DirectlyApply</h1>
+    </nav>
+    <main id="main">
+      <h1>Signup</h1>
+      <div class="form-container">
+        <form id="form">
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" /><br />
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="tel">Telephone Number:</label><br />
+          <input type="tel" id="tel" name="tel" /><br />
+          <label for="currentJob">Current Position:</label><br />
+          <input type="text" id="currentJob" name="currentJob" /><br />
+          <label for="password1">Password:</label><br />
+          <input type="password" id="password1" name="password1" /><br />
+          <label for="password2">Confirm Password:</label><br />
+          <input type="password" id="password2" name="password2" /><br />
+          <label for="source">How did you find out about us?:</label><br />
+          <select name="source" id="source" required>
+            <option value="">Select</option>
+            <option value="indeed">Indeed</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="friend">Friend</option>
+            <option value="other job board">Other Job Board</option>
+          </select>
+        </form>
+        <button id="submit">Submit</button>
+        <div id="errorMessage"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

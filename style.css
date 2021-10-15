@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: steelblue;
+}
+
+nav h1 {
+  padding: 0 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 80%;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  width: 20rem;
+  background-color: lightgray;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+form {
+  text-align: left;
+}
+
+input {
+  padding-left: 0.2rem;
+  height: 1.3rem;
+  width: 95%;
+}
+
+select {
+  width: 97.5%;
+  height: 1.6rem;
+}
+
+#submit {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  margin-top: 0.6rem;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: steelblue;
+  color: white;
+}
+
+#errorMessage {
+  width: 80%;
+  margin: 0 auto;
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.success-message {
+  color: white;
+  background-color: mediumseagreen;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 20vh;
+  padding: 1rem;
+}
+
+/* HOVER */
+input:hover {
+  border: 2px solid beige;
+}
+#submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* SMALL SCREENS */
+@media only screen and (max-width: 500px) {
+  main {
+    width: auto;
+  }
+  .form-container {
+    width: 15rem;
+  }
+  .success-message {
+    width: 90%;
+  }
+}
